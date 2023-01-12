@@ -10,5 +10,14 @@ class DesafioController < ApplicationController
     return @campaign
   end
 
-  
+  def list_campaigns_by_state(state)
+    @actual_list = []
+    @list = Campaign.joins(:campaign_states).where(campaign_states: {state: state})
+    p @list
+    @list.each do |camp|
+      @actual_list << camp if camp.campaign_states.last.state == state.to_s
+    end
+    @actual_list
+  end
+
 end
