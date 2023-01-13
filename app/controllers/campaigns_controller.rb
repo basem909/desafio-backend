@@ -1,5 +1,4 @@
 class CampaignsController < ApplicationController
-
   def last_completed
     # Get the last completed state on Campaign_State table
     @last_completed = Campaign.find_last_completed_campaign
