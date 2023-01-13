@@ -3,4 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :campaigns do
+    collection do
+      get 'last_completed'
+      post 'list_state'
+      get 'total_state'
+    end
+  end
 end
