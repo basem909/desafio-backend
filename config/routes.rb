@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :campaigns do
     collection do
-      get 'find_last_completed_campaign'
-      post 'list_campaigns_by_state'
-      get 'total_campaigns_by_state'
+      get 'last_completed'
+      post 'list_state'
+      get 'total_state'
     end
   end
 end
