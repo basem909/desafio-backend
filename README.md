@@ -63,3 +63,11 @@ Implementar a consulta para listar o total de campanhas por estado considerando 
   { campaigns: 1, state: 'error' }
 ]
 ```
+# Documentação de solução
+- mostra de code:
+
+https://www.loom.com/share/9b8174df0f5c483d91935f9d6d46513f
+
+- mostra de resultado do api no Postman:
+
+https://www.loom.com/share/b582aa255d5e45aaa3652112210afb74
